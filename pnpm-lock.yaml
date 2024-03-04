@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   crypto-js@<4.2.0: '>=4.2.0'
 
@@ -9,14 +13,14 @@ importers:
     dependencies:
       '@saleor/app-sdk':
         specifier: 0.47.2
-        version: 0.47.2(graphql@16.8.0)(next@13.4.8)(react-dom@18.2.0)(react@18.2.0)
+        version: 0.47.2(graphql@16.7.1)(next@13.4.8)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.26.2
         version: 2.26.2
       '@sentry/cli':
-        specifier: 2.20.6
-        version: 2.20.6
+        specifier: 2.29.1
+        version: 2.29.1
       '@types/node':
         specifier: 18.15.3
         version: 18.15.3
@@ -1471,8 +1475,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/react-hook-form-macaw
       '@sentry/cli':
-        specifier: 2.20.6
-        version: 2.20.6
+        specifier: 2.29.1
+        version: 2.29.1
       '@sentry/nextjs':
         specifier: 7.77.0
         version: 7.77.0(next@13.4.8)(react@18.2.0)
@@ -1720,7 +1724,7 @@ importers:
     dependencies:
       '@urql/exchange-auth':
         specifier: ^2.1.4
-        version: 2.1.4(graphql@16.8.0)
+        version: 2.1.4(graphql@16.7.1)
       eslint:
         specifier: 8.46.0
         version: 8.46.0
@@ -1766,7 +1770,7 @@ importers:
         version: 5.1.6
       urql:
         specifier: ^4.0.4
-        version: 4.0.4(graphql@16.8.0)(react@18.2.0)
+        version: 4.0.4(graphql@16.7.1)(react@18.2.0)
       vite:
         specifier: 4.4.8
         version: 4.4.8(@types/node@18.15.3)
@@ -1956,17 +1960,6 @@ packages:
         optional: true
     dependencies:
       graphql: 16.7.1
-    dev: false
-
-  /@0no-co/graphql.web@1.0.4(graphql@16.8.0):
-    resolution: {integrity: sha512-W3ezhHGfO0MS1PtGloaTpg0PbaT8aZSmmaerL7idtU5F7oCI+uu25k+MsMS31BVFlp4aMkHSrNRxiD72IlK8TA==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-    peerDependenciesMeta:
-      graphql:
-        optional: true
-    dependencies:
-      graphql: 16.8.0
 
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -9462,11 +9455,11 @@ packages:
     resolution: {integrity: sha512-V+MvGwaHH03hYhY+k6Ef/xKd6RYlc4q8WBx+2ANmipHJcKuktNcI/NgEsJgdSUF6Lw32njT6OnrRsKYCdgHjYw==}
     dev: true
 
-  /@saleor/app-sdk@0.47.2(graphql@16.8.0)(next@13.4.8)(react-dom@18.2.0)(react@18.2.0):
+  /@saleor/app-sdk@0.47.2(graphql@16.7.1)(next@13.4.8)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ctGbL9R5dmAYEMQHr+ir2OcvPCEmM3SDZX6isKBYLiO6CqKB7P8SNPjxlPBSiafC17ZcoKjim0oMhfqqcz3Srg==}
     peerDependencies:
       '@vercel/kv': ^1.0.0
-      graphql: 16.8.0
+      graphql: '>=16.6.0'
       next: '>=12'
       react: '>=17'
       react-dom: '>=17'
@@ -9477,7 +9470,7 @@ packages:
       '@opentelemetry/api': 1.7.0
       '@opentelemetry/semantic-conventions': 1.18.1
       debug: 4.3.4
-      graphql: 16.8.0
+      graphql: 16.7.1
       jose: 4.14.4
       next: 13.4.8(@babel/core@7.23.3)(react-dom@18.2.0)(react@18.2.0)
       raw-body: 2.5.2
@@ -9594,6 +9587,61 @@ packages:
       '@sentry/utils': 7.77.0
     dev: false
 
+  /@sentry/cli-darwin@2.29.1:
+    resolution: {integrity: sha512-FfYkME4stq6q1sWWsxFAjTa1pxc+GV+HTHYcnajqU+X0rQReoOvFvi00AHua1qKy8+lH5/RgEvMJcDBdoa0h3A==}
+    engines: {node: '>=10'}
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-linux-arm64@2.29.1:
+    resolution: {integrity: sha512-xcwNMJDC10kbi7T1kXRtZCMfgBtD3qLRgYEHJR0UuTONF+pF80uacdde+7oABW+rA3jy2G+4+cR5pN9M2x8wGQ==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux, freebsd]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-linux-arm@2.29.1:
+    resolution: {integrity: sha512-lqOsmAVVgRYZzNyGQA1jnmALx0LnZ/Z7zc8/2TFrQYT7FUps5FP3yDDKlsUTaB8Z8A0++k7AqFgwlIeJw7+mPQ==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [linux, freebsd]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-linux-i686@2.29.1:
+    resolution: {integrity: sha512-yOe7YEx42vl0Q8MgkbQmLbRe2KjijjMP+l9DYAfbOJHdTJ+3tNfBcRqFXsVNiobGxUeaVE5oDkOJ+7iGGgM2HA==}
+    engines: {node: '>=10'}
+    cpu: [x86, ia32]
+    os: [linux, freebsd]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-linux-x64@2.29.1:
+    resolution: {integrity: sha512-fzKh/lRwzZSb+QIebuWN9qXXABGarsL9V2xONGwWv202AueK0WFxr6/ADsE7OlmM/4cDby5Sd+oMKos2eeVcVA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux, freebsd]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-win32-i686@2.29.1:
+    resolution: {integrity: sha512-qdzg2nCSLfMgwhH7HLb6nPngJgbDvcOfDPtF+Y7axoe18iiQW0Ju7M9/e30t8vaOcUz9ZowQgFvxdgYlHJ3jMw==}
+    engines: {node: '>=10'}
+    cpu: [x86, ia32]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  /@sentry/cli-win32-x64@2.29.1:
+    resolution: {integrity: sha512-CtGuRmwJ06WVMyVOq/Oa0l/1fI7rSAxcAlCzVAvj1p09aLXAGObGXmljXUeQ1jxE/Ll4yRAo9TjA8Y+vxPtkJw==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
   /@sentry/cli@1.76.0:
     resolution: {integrity: sha512-56bVyUJoi52dop/rFEaSoU4AfVRXpR6M+nZBwN1iGUAwdfBrarNbtmIOjfgPi+tVzVB5ck09PzVXG6zeBqJJcA==}
     engines: {node: '>= 8'}
@@ -9611,8 +9659,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sentry/cli@2.20.6:
-    resolution: {integrity: sha512-j4OFbDCIo/dB/uXDmXnRqCbku0KquekSFSG0Wb6RKwkGqpKwFMRauKXZJrgL4as3qIfDX8HrjNRv257QYMwdQA==}
+  /@sentry/cli@2.29.1:
+    resolution: {integrity: sha512-STtuGm8vdR4ifR3I6mFmt9y7Dk9QzeOvpyXEG5H7dkFDSvU7cepkYAlli5QiZDzECngxGx/uLAzZzFKSATF1Qw==}
     engines: {node: '>= 10'}
     hasBin: true
     requiresBuild: true
@@ -9622,6 +9670,14 @@ packages:
       progress: 2.0.3
       proxy-from-env: 1.1.0
       which: 2.0.2
+    optionalDependencies:
+      '@sentry/cli-darwin': 2.29.1
+      '@sentry/cli-linux-arm': 2.29.1
+      '@sentry/cli-linux-arm64': 2.29.1
+      '@sentry/cli-linux-i686': 2.29.1
+      '@sentry/cli-linux-x64': 2.29.1
+      '@sentry/cli-win32-i686': 2.29.1
+      '@sentry/cli-win32-x64': 2.29.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -11469,29 +11525,11 @@ packages:
       wonka: 6.3.2
     transitivePeerDependencies:
       - graphql
-    dev: false
-
-  /@urql/core@4.0.10(graphql@16.8.0):
-    resolution: {integrity: sha512-Vs3nOSAnYftqOCg034Ostp/uSqWlQg5ryLIzcOrm8+O43s4M+Ew4GQAuemIH7ZDB8dek6h61zzWI3ujd8FH3NA==}
-    dependencies:
-      '@0no-co/graphql.web': 1.0.4(graphql@16.8.0)
-      wonka: 6.3.2
-    transitivePeerDependencies:
-      - graphql
 
   /@urql/exchange-auth@2.1.4(graphql@16.7.1):
     resolution: {integrity: sha512-ijAKSgswusrProxrusX8TcYntCgMptQiirdNHwgy0EcWucxQ+1zgxiRNFKpkaRMpGk5WCFeCpsXTEYtlvuFmDg==}
     dependencies:
       '@urql/core': 4.0.10(graphql@16.7.1)
-      wonka: 6.3.2
-    transitivePeerDependencies:
-      - graphql
-    dev: false
-
-  /@urql/exchange-auth@2.1.4(graphql@16.8.0):
-    resolution: {integrity: sha512-ijAKSgswusrProxrusX8TcYntCgMptQiirdNHwgy0EcWucxQ+1zgxiRNFKpkaRMpGk5WCFeCpsXTEYtlvuFmDg==}
-    dependencies:
-      '@urql/core': 4.0.10(graphql@16.8.0)
       wonka: 6.3.2
     transitivePeerDependencies:
       - graphql
@@ -15964,10 +16002,6 @@ packages:
 
   /graphql@16.7.1:
     resolution: {integrity: sha512-DRYR9tf+UGU0KOsMcKAlXeFfX89UiiIZ0dRU3mR0yJfu6OjZqUcp68NnFLnqQU5RexygFoDy1EW+ccOYcPfmHg==}
-    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
-
-  /graphql@16.8.0:
-    resolution: {integrity: sha512-0oKGaR+y3qcS5mCu1vb7KG+a89vjn06C7Ihq/dDl3jA+A8B3TKomvi3CiEcVLJQGalbu8F52LxkOym7U5sSfbg==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   /gtin@1.0.2:
@@ -22075,19 +22109,6 @@ packages:
       wonka: 6.3.2
     transitivePeerDependencies:
       - graphql
-    dev: false
-
-  /urql@4.0.4(graphql@16.8.0)(react@18.2.0):
-    resolution: {integrity: sha512-C5P4BMnAsk+rbytCWglit5ijXbIKXsa9wofSGPbuMyJKsDdL+9GfipS362Nff/Caag+eYOK5W+sox8fwEILT6Q==}
-    peerDependencies:
-      react: '>= 16.8.0'
-    dependencies:
-      '@urql/core': 4.0.10(graphql@16.8.0)
-      react: 18.2.0
-      wonka: 6.3.2
-    transitivePeerDependencies:
-      - graphql
-    dev: true
 
   /use-callback-ref@1.3.0(@types/react@18.2.5)(react@18.2.0):
     resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
@@ -22895,7 +22916,3 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
